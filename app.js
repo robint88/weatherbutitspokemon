@@ -6,11 +6,8 @@ window.addEventListener('load',()=>{
         navigator.geolocation.getCurrentPosition(position => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
-            let apiKey = "6fb3917a77c71e92a9894f47553518df";
             
-            const proxy = "https://cors-anywhere.herokuapp.com/"
-            const api = `${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${apiKey}`
-            console.log(api);
+            const api = `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=${apiKey}`
             fetch(api)
                 .then(response => {
                     return response.json();
