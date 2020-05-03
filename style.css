@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+.background {
+    height: 100vh;
+    background:linear-gradient(pink, teal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://pm1.narvii.com/5771/e7449f995a08a2faeb35ecd34d4be6ba667846b0_hq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.location h2 {
+    font-size: 8em;
+    color: #ffcb05;
+}
+
+.temp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.temp .degrees,
+.type {
+    text-align: center;
+    width: 25vw;
+    font-size: 4em;
+}
